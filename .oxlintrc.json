@@ -1,0 +1,19 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"extends": ["./.oxlintrc.base.json"],
+	"settings": {
+		"better-tailwindcss": {
+			"entryPoint": "src/index.css"
+		}
+	},
+	"overrides": [
+		{
+			"files": ["**/*.{ts,tsx}"],
+			"jsPlugins": ["eslint-plugin-better-tailwindcss"],
+			"rules": {
+				"better-tailwindcss/enforce-canonical-classes": "error",
+				"better-tailwindcss/no-unnecessary-whitespace": "error"
+			}
+		}
+	]
+}

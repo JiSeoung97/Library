@@ -1,0 +1,8 @@
+node_modules/
+*.md
+*.lock
+*.mdx
+pnpm-lock.yaml
+
+src/routeTree.gen.ts
+public/mockServiceWorker.js

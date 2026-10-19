@@ -1,0 +1,9 @@
+/* Tailwind 유틸리티에 !important 를 붙여 MUI 기본 스타일보다 우선하게 한다 (mes_FE 동일) */
+@import 'tailwindcss' important;
+
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+}
